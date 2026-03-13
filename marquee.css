@@ -1,0 +1,41 @@
+/* From Uiverse.io by OnCloud125252 */
+
+
+/* Note that you only needs to edit the config to customize the button! */
+
+.plusButton {
+    /* Config start */
+    --plus_sideLength: 10vw;
+    --plus_topRightTriangleSideLength: 0.9rem;
+    /* Config end */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    width: var(--plus_sideLength);
+    height: var(--plus_sideLength);
+    background-color: #000000;
+    overflow: hidden;
+    max-width: 50px;
+    max-height: 50px;
+}
+
+
+
+.plusButton:hover {
+    cursor: pointer;
+}
+
+
+.plusButton:focus-visible::before {
+    --plus_topRightTriangleSideLength: calc(var(--plus_sideLength) * 2);
+}
+
+.linguas {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin: 10px;
+}
+

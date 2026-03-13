@@ -1,50 +1,67 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
-    <title>Rafael Ramos da Luz</title>
-    <link rel="stylesheet" href="style.css">
-
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="background.css" />
+    <link rel="stylesheet" href="splash.css" />
+    <link rel="stylesheet" href="glitch.css" />
+    <link rel="stylesheet" href="terminal.css" />
+    <link rel="stylesheet" href="buttons.css" />
+    <link rel="stylesheet" href="marquee.css" />
+    <link rel="stylesheet" href="crt.css" />
 </head>
 
-
 <body>
-
-
-    <div class="navegação">
-
-
-        <div class="nav_botoes">
-            <a href="index.html">Home</a>
-        </div>
-
-
-
-
-        <div class="nav_botoes">
-            <a href="experiencias.html">Experiências</a>
-        </div>
-
-
-
-
-        <div class="nav_botoes">
-            <a href="cursos.html">Cursos</a>
-        </div>
-
-
-        <div class="nav_botoes">
-            <a href="CURRICULO.pdf" target="_blank">Currículo</a>
-
-
+    <div id="splash">
+        <div class="queda">
+            <div class="terminal-loader">
+                <div class="terminal-header">
+                    <div class="terminal-title">Status</div>
+                    <div class="terminal-controls">
+                        <div class="control close"></div>
+                        <div class="control minimize"></div>
+                        <div class="control maximize"></div>
+                    </div>
+                </div>
+                <div class="text">
+                    <div class="loader">
+                        <div data-glitch="Loading..." class="glitch">Loading...</div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
+    <div id="main-content" style="display: none">
+
+        <center>
+            <h1>Rafael Ramos Da Luz</h1>
+        </center>
+
+        <center>
+            <nav>
+                <div tabindex="0" class="Button">
+                    <a class="ButtonText" href="index.html">Home</a>
+                </div>
+                <div tabindex="0" class="Button">
+                    <a class="ButtonText" href="experiencias.html">Experiencias</a>
+                </div>
+                <div tabindex="0" class="Button">
+                    <a class="ButtonText" href="cursos.html">Cursos</a>
+                </div>
+                <div tabindex="0" class="Button">
+                    <p class="ButtonText" href="CURRICULO.pdf">Curriculo</p>
+                </div>
+
+
+
+            </nav>
+        </center>
 
 
 
@@ -52,105 +69,144 @@
 
 
 
-    <h1>Rafael Ramos Da Luz</h1>
+        <div class="conteudo">
+            <div class="terminal-content-uni">
+                <div class="terminal-header">
+                    <div class="terminal-title">Resumo</div>
+                    <div class="terminal-controls">
+                        <div class="control close"></div>
+                        <div class="control minimize"></div>
+                        <div class="control maximize"></div>
+                    </div>
+                </div>
+                <div>
+                    <p>
+                        Minha trajetória combina paixão por tecnologia e impacto social. Formação técnica em TI pelo
+                        Senac, seguida de experiência como Secretário no Hospital Cristo Redentor durante a pandemia
+                        –
+                        período que fortaleceu minha resiliência e capacidade de trabalhar
+                        sob pressão.
+                        <br /> Na faculdade de Ciência da Computação, atuei como voluntário ensinando informática
+                        básica
+                        no CRAS e fui professor no curso "Criar Jogos" para jovens, desenvolvendo didática,
+                        comunicação
+                        e liderança. Também liderei oficinas
+                        de TI nos "Mochilões do Conhecimento" da Faculdade Cesuca. <br /> Atualmente, foco em
+                        realizar
+                        meu sonho de atuar como Pentester em cibersegurança. Busco oportunidade desafiadora onde
+                        possa
+                        aplicar base técnica, mentalidade analítica
+                        e perseverança para identificar vulnerabilidades e fortalecer sistemas. Motivado por
+                        resolver
+                        problemas complexos e aprender continuamente em segurança ofensiva.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="conteudo">
+            <div class="terminal-content">
+                <div class="terminal-header">
+                    <div class="terminal-title">Formação</div>
+                    <div class="terminal-controls">
+                        <div class="control close"></div>
+                        <div class="control minimize"></div>
+                        <div class="control maximize"></div>
+                    </div>
+                </div>
+                <div>
+                    <ul>
+                        <li>Ensino Fundamental– Colégio Adventista de Gravataí</li>
+                        <li>Ensino Médio – E.E.E.M.Frantz Machado Charão</li>
+                        <li>Técnico em Informática – Senac Gravataí</li>
+                        <li>
+                            Ensino Superior - Cesuca Centro Universitário Bacharel Ciência da Computação - cursando
+                            5
+                            semestre–
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="grupo">
 
 
-    <ul>
-        <li>
-            Brasileiro, solteiro, 21 anos
-        </li>
-        <li>
-            Endereço: Rua São Luiz,1307 - Casa 01 - São Luiz – Gravataí RS
-        </li>
-        <li>
-            Telefone: (51) 99455-8031
-        </li>
-        <li>
-            Email: rafaramos.luz@gmail.com
-        </li>
-    </ul>
-
-    <h2>Linguagens de programação</h2>
-
-    <article>
-
-        <ul class="linguas">
-            <li>
-                Javascript
-            </li>
-            <li>
-                Python
-            </li>
-            <li>
-                SQL
-            </li>
-            <li>
-                PHP
-            </li>
-            <li>
-                Java
-            </li>
-            <li>
-                CSS
-            </li>
-            <li>
-                HTML 
-            </li>
-        </ul>
-
-    </article>
-
-
-
-    <h2>Formação</h2>
-
-    <hr>
-
-    <article>
-
-        <ul>
-            <li>
-                Ensino Fundamental– Colégio Adventista de Gravataí
-            </li>
-            <li>
-                Ensino Médio – E.E.E.M.Frantz Machado Charão
-            </li>
-            <li>
-                Técnico em Informática – Senac Gravataí
-            </li>
-            <li>
-                Ensino Superior - Cesuca Centro Universitário Bacharel Ciência da Computação - cursando 5 semestre–
-            </li>
-        </ul>
-
-    </article>
-
-    <h2>Idiomas </h2>
-
-    <hr>
-
-    <article>
-
-        <ul>
-            <li>
-                Ingles- SENAC FLUENCY 3 AND 4 (144 horas) 07/03/2022 - 12/12/2022 CEFR B1+
-            </li>
-        </ul>
-
-    </article>
-
-    
+                <div class="terminal-content">
+                    <div class="terminal-header">
+                        <div class="terminal-title">idiomas</div>
+                        <div class="terminal-controls">
+                            <div class="control close"></div>
+                            <div class="control minimize"></div>
+                            <div class="control maximize"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>
+                                Ingles- SENAC FLUENCY 3 AND 4 (144 horas) 07/03/2022 - 12/12/2022 CEFR B1+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
 
 
 
 
+                <div class="terminal-content">
+                    <div class="terminal-header">
+                        <div class="terminal-title">linguagens</div>
+                        <div class="terminal-controls">
+                            <div class="control close"></div>
+                            <div class="control minimize"></div>
+                            <div class="control maximize"></div>
+                        </div>
+                    </div>
+                    <div>
+
+                        <div class="linguas">
+                            <div class="plusButton">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+                                    alt="" width="100%" />
+                            </div>
+
+                            <div class="plusButton">
+                                <div>
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/960px-Python-logo-notext.svg.png"
+                                        alt="" width="100%" />
+                                </div>
+                            </div>
+                            <div class="plusButton">
+                                <div>
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Sql_data_base_with_logo.svg/120px-Sql_data_base_with_logo.svg.png"
+                                        alt="" width="100%" />
+                                </div>
+                            </div>
+                            <div class="plusButton">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/960px-PHP-logo.svg.png"
+                                    alt="" width="100%" />
+                            </div>
+                            <div class="plusButton">
+                                <img src="https://upload.wikimedia.org/wikipedia/pt/thumb/3/30/Java_programming_language_logo.svg/250px-Java_programming_language_logo.svg.png?_=20190828223431"
+                                    alt="" height="100%" />
+                            </div>
+                            <div class="plusButton">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Official_CSS_Logo.svg/960px-Official_CSS_Logo.svg.png"
+                                    alt="" width="100%" />
+                            </div>
+                            <div class="plusButton">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/960px-HTML5_logo_and_wordmark.svg.png"
+                                    alt="" width="100%" />
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
-
-
-
-
-
-
-
 
 </html>

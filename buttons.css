@@ -1,0 +1,90 @@
+/* From Uiverse.io by OnCloud125252 */
+
+
+/* Note that you only needs to edit the config to customize the button! */
+
+.Button {
+    /* Config start */
+    --button_width: 6rem;
+    --button_height: 2.5rem;
+    --button_bottomLeftTriangleSideLength: 1rem;
+    --button_topRightTriangleSideLength: 0.9rem;
+    /* Config end */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    width: 6rem;
+    height: 2.5rem;
+    background-color: #000000;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.Button::before {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-width: 0 var(--button_bottomLeftTriangleSideLength) var(--button_bottomLeftTriangleSideLength) 0;
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.2s;
+}
+
+.Button::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    width: calc(var(--button_topRightTriangleSideLength) * 1.4142135623730950488016887242097);
+    height: calc(var(--button_topRightTriangleSideLength) * 1.4142135623730950488016887242097);
+    outline: 1px solid white;
+    transform: translate(50%, -50%) rotate(45deg);
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.2s;
+}
+
+.Button:hover {
+    cursor: pointer;
+}
+
+.Button:hover::before {
+    --button_bottomLeftTriangleSideLength: calc(var(--button_width) + var(--button_height) - var(--button_topRightTriangleSideLength) + (var(--button_topRightTriangleSideLength) * 0.3));
+}
+
+.Button:focus-visible::before {
+    --button_bottomLeftTriangleSideLength: calc(var(--button_width) + var(--button_height) - var(--button_topRightTriangleSideLength) + (var(--button_topRightTriangleSideLength) * 0.3));
+}
+
+.Button:hover::after {
+    transform: translate(calc(50% + var(--button_topRightTriangleSideLength) * 0.1), calc((50% + var(--button_topRightTriangleSideLength) * 0.1) * -1)) rotate(45deg);
+}
+
+.Button:focus-visible::after {
+    transform: translate(calc(50% + var(--button_topRightTriangleSideLength) * 0.1), calc((50% + var(--button_topRightTriangleSideLength) * 0.1) * -1)) rotate(45deg);
+}
+
+.Button:hover>.ButtonText {
+    color: black;
+}
+
+.Button:focus-visible>.ButtonText {
+    color: black;
+}
+
+.ButtonText {
+    margin: auto 0;
+    color: white;
+    font-size: 0.875rem;
+    line-height: 1.25vh;
+    font-weight: 700;
+    text-align: center;
+    z-index: 1;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.2s;
+}
